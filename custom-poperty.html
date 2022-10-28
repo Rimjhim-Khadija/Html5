@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom poperty</title>
+<style>
+    :root {
+        --side-width:200px;
+        --main-border:orangered;
+        --header-border:2px solid aqua;
+        --footer-color: brown;
+    }
+    h1{
+        border: var(--header-border);
+    }
+
+    p{
+        border: 4px solid var(--main-border);
+    }
+    h2{
+        clear: both;
+        color: var(--footer-color);
+    }
+    aside,div{
+        float: left;
+        height: 400px;
+    }
+    .asd{
+        background-color: yellowgreen;
+        width: var(--side-width);
+    }
+    .container{
+        background-color: brown;
+       width: calc(100% - var(--side-width));
+    }
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to our page</h1>
+    </header>
+    <main>
+       
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quae, atque eum rem, ut id nostrum adipisci facilis velit nemo voluptas odit repellendus consequuntur dolor itaque inventore. Quas, odio iure!</p>
+
+        <section>
+            <aside class="asd">
+                Hello
+            </aside>
+            <div class="container">
+                khadija
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Thank you</h2>
+    </footer>
+</body>
+</html>
